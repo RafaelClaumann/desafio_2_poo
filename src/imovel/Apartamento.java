@@ -1,3 +1,5 @@
+package imovel;
+
 public class Apartamento extends Imovel {
 
     private int andar;

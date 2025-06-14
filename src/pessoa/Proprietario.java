@@ -1,3 +1,5 @@
+package pessoa;
+
 public class Proprietario extends Pessoa implements ReceberValor {
 
     private String conta;
@@ -5,7 +7,7 @@ public class Proprietario extends Pessoa implements ReceberValor {
 
     @Override
     public void receber(final double valor) {
-        System.out.println("Proprietario recebeu: " + valor);
+        System.out.println("pessoa.Proprietario recebeu: " + valor);
     }
 
 }

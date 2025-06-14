@@ -1,3 +1,5 @@
+package pessoa;
+
 public class Locatario extends Pessoa {
 
     private String email;

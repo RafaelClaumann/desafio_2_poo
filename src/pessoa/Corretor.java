@@ -1,3 +1,5 @@
+package pessoa;
+
 import java.time.LocalDate;
 
 public class Corretor extends Pessoa implements ReceberValor {
@@ -8,12 +10,12 @@ public class Corretor extends Pessoa implements ReceberValor {
     private double totalComissaoAcumulada;
 
     public void sacarComissoes(double valor) {
-        System.out.println("Corretor sacou comissao: " + valor);
+        System.out.println("pessoa.Corretor sacou comissao: " + valor);
     }
 
     @Override
     public void receber(final double valor) {
-        System.out.println("Corretor recebeu: " + valor);
+        System.out.println("pessoa.Corretor recebeu: " + valor);
     }
 
 }

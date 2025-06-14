@@ -1,3 +1,5 @@
+package imovel;
+
 public abstract class Imovel {
 
     private int codigo;
