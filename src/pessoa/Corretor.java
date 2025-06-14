@@ -1,6 +1,9 @@
 package pessoa;
 
+import commom.Locacao;
+
 import java.time.LocalDate;
+import java.util.List;
 
 public class Corretor extends Pessoa implements ReceberValor {
 
@@ -8,6 +11,7 @@ public class Corretor extends Pessoa implements ReceberValor {
     private LocalDate dataAdmissao;
     private double comissao;
     private double totalComissaoAcumulada;
+    private List<Locacao> locacoes;
 
     public void sacarComissoes(double valor) {
         System.out.println("pessoa.Corretor sacou comissao: " + valor);
