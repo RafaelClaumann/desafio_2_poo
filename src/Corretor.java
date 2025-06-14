@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Corretor extends Pessoa {
+public class Corretor extends Pessoa implements ReceberValor {
 
     private String registro;
     private LocalDate dataAdmissao;
@@ -11,7 +11,8 @@ public class Corretor extends Pessoa {
         System.out.println("Corretor sacou comissao: " + valor);
     }
 
-    public void receber(double valor) {
+    @Override
+    public void receber(final double valor) {
         System.out.println("Corretor recebeu: " + valor);
     }
 

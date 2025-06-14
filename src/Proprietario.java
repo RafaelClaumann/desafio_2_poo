@@ -1,9 +1,10 @@
-public class Proprietario extends Pessoa {
+public class Proprietario extends Pessoa implements ReceberValor {
 
     private String conta;
     private String agencia;
 
-    void receber(double valor) {
+    @Override
+    public void receber(final double valor) {
         System.out.println("Proprietario recebeu: " + valor);
     }
 
