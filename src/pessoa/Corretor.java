@@ -12,7 +12,7 @@ public class Corretor extends Pessoa implements ReceberValor {
     private double comissao;
     private double totalComissaoAcumulada;
 
-    // [Locacao] 1...* ------<> 1 [Corretor]
+    // [Corretor] 1 <>------ 1...* [Locacao]
     private List<Locacao> locacoes;
 
     public void sacarComissoes(double valor) {

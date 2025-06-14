@@ -9,7 +9,7 @@ public class Locatario extends Pessoa {
     private String email;
     private String salario;
 
-    // [Locacao] 1...* ------<> 1 [Locatario]
+    // [Locatario] 1 <> ------ 1...* [Locacao]
     private List<Locacao> locacoes;
 
 }
