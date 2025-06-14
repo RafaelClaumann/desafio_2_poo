@@ -14,7 +14,7 @@ public class Proprietario extends Pessoa implements ReceberValor {
 
     @Override
     public void receber(final double valor) {
-        System.out.println("pessoa.Proprietario recebeu: " + valor);
+        System.out.printf("O proprietário %s está recebendo o valor de R$ %f%n", super.getNome(), valor);
     }
 
 }

@@ -7,4 +7,8 @@ public abstract class Pessoa {
     private String endereco;
     private String cpf;
 
+    public String getNome() {
+        return nome;
+    }
+
 }

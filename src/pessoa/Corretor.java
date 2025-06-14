@@ -21,7 +21,7 @@ public class Corretor extends Pessoa implements ReceberValor {
 
     @Override
     public void receber(final double valor) {
-        System.out.println("pessoa.Corretor recebeu: " + valor);
+        System.out.printf("O corretor %s está recebendo o valor de R$ %f%n", super.getNome(), valor + this.totalComissaoAcumulada);
     }
 
 }
