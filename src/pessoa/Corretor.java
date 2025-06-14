@@ -15,8 +15,8 @@ public class Corretor extends Pessoa implements ReceberValor {
     // [Corretor] 1 <>------ 1...* [Locacao]
     private List<Locacao> locacoes;
 
-    public void sacarComissoes(double valor) {
-        System.out.println("pessoa.Corretor sacou comissao: " + valor);
+    public void sacarComissoes(final double valor) {
+        this.totalComissaoAcumulada = this.totalComissaoAcumulada - valor;
     }
 
     @Override
