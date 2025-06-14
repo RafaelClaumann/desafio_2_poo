@@ -11,7 +11,11 @@ public class Locacao {
     private LocalDate dataInicio;
     private LocalDate dataFim;
     private LocalDate dataPagamento;
+
+    // [Locacao] 1...* ------<> 1 [Locatario]
     private Locatario locatario;
+
+    // [Locacao] 1...* ------<> 1 [Corretor]
     private Corretor corretor;
 
     // [Locacao] 1..* ------> 1 [Imovel]
