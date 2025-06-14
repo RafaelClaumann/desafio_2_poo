@@ -25,4 +25,9 @@ public abstract class Imovel {
     public double getValorLocacao() {
         return valorLocacao;
     }
+
+    public Proprietario getProprietario() {
+        return proprietario;
+    }
+
 }

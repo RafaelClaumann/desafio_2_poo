@@ -27,7 +27,9 @@ public class Locacao {
     }
 
     public void pagarProprietario() {
-        System.out.println("Pagando proprietario");
+        final double valorAluguel = this.imovel.calcularAluguel();
+        this.imovel.getProprietario().receber(valorAluguel);
+        this.corretor.receber(valorAluguel);
     }
 
 }
