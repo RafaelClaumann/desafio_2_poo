@@ -16,11 +16,12 @@ public class Corretor extends Pessoa implements ReceberValor {
     private List<Locacao> locacoes;
 
     public void sacarComissoes(final double valor) {
-        this.totalComissaoAcumulada = this.totalComissaoAcumulada - valor;
+        this.totalComissaoAcumulada -= valor;
     }
 
     @Override
     public void receber(final double valor) {
+        this.totalComissaoAcumulada += valor;
         System.out.printf("O corretor %s está recebendo o valor de R$ %f%n", super.getNome(), valor + this.totalComissaoAcumulada);
     }
 
