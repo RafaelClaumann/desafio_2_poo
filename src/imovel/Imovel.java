@@ -9,7 +9,7 @@ public abstract class Imovel {
 
     private int codigo;
     private String endereco;
-    private double valorLcacao;
+    private double valorLocacao;
     private int vagasGaragem;
     private int quartos;
     private int banheiros;
@@ -22,4 +22,7 @@ public abstract class Imovel {
 
     public abstract double calcularAluguel();
 
+    public double getValorLocacao() {
+        return valorLocacao;
+    }
 }
