@@ -22,7 +22,8 @@ public class Locacao {
     private Imovel imovel;
 
     public void enviarCobranca() {
-        System.out.println("Enviando cobranca");
+        System.out.printf("E-mail: %s%n", locatario.getEmail());
+        System.out.printf("O valor referente ao seu aluguel neste mês foi de R$ %f%n.", imovel.calcularAluguel());
     }
 
     public void pagarProprietario() {

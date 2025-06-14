@@ -12,4 +12,8 @@ public class Locatario extends Pessoa {
     // [Locatario] 1 <> ------ 1...* [Locacao]
     private List<Locacao> locacoes;
 
+    public String getEmail() {
+        return this.email;
+    }
+
 }
