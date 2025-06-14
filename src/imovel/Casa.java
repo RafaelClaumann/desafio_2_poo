@@ -6,7 +6,7 @@ public class Casa extends Imovel {
 
     @Override
     public double calcularAluguel() {
-        return 0.0;
+        return super.getValorLocacao();
     }
 
 }
