@@ -1,5 +1,9 @@
 # Desafio 2 - Programação Orientada à Objetos
 
+### Diagrama de classes
+
+![image](https://github.com/user-attachments/assets/afb31b53-9342-4d6d-a2cf-40cca3107aaa)
+
 ### Requisitos
 
 - [x] O cálculo do aluguel deverá ser feito por cada subclasse, de acordo com as regras do
