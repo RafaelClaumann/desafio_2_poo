@@ -19,6 +19,13 @@ public abstract class Imovel {
     private List<Locacao> locacoes;
     private Proprietario proprietario;
 
+    public Imovel() {}
+
+    public Imovel(Proprietario proprietario, double valorLocacao) {
+        this.proprietario = proprietario;
+        this.valorLocacao = valorLocacao;
+    }
+
     public abstract double calcularAluguel();
 
     public double getValorLocacao() {

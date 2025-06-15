@@ -12,6 +12,10 @@ public class Locatario extends Pessoa {
     // [Locatario] 1 <> ------ 1...* [Locacao]
     private List<Locacao> locacoes;
 
+    public Locatario(String nome) {
+        super(nome);
+    }
+
     public String getEmail() {
         return this.email;
     }

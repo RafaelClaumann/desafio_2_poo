@@ -12,6 +12,10 @@ public class Proprietario extends Pessoa implements ReceberValor {
     // [Proprietario] 1 <>------ 1...* [Imovel]
     private List<Imovel> imoveis;
 
+    public Proprietario(String nome) {
+        super(nome);
+    }
+
     @Override
     public void receber(final double valor) {
         System.out.printf("O proprietário %s está recebendo o valor de R$ %f%n", super.getNome(), valor);
