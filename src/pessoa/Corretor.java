@@ -15,6 +15,10 @@ public class Corretor extends Pessoa implements ReceberValor {
     // [Corretor] 1 <>------ 1...* [Locacao]
     private List<Locacao> locacoes;
 
+    public Corretor(String nome) {
+        super(nome);
+    }
+
     public void sacarComissoes(final double valor) {
         this.totalComissaoAcumulada -= valor;
     }
