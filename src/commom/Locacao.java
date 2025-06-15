@@ -13,12 +13,10 @@ public class Locacao {
     private LocalDate dataPagamento;
 
     // [Locacao] 1...* ------<> 1 [Locatario]
-    private Locatario locatario;
-
     // [Locacao] 1...* ------<> 1 [Corretor]
+    // [Locacao] 1...* -------> 1 [Imovel]
+    private Locatario locatario;
     private Corretor corretor;
-
-    // [Locacao] 1..* ------> 1 [Imovel]
     private Imovel imovel;
 
     public void enviarCobranca() {

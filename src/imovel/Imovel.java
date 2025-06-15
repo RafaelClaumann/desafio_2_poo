@@ -15,9 +15,8 @@ public abstract class Imovel {
     private int banheiros;
 
     // [Imovel] 1 <------ 1...* [Locacao]
-    private List<Locacao> locacoes;
-
     // [Imovel] 1...* ------<> 1 [Proprietario]
+    private List<Locacao> locacoes;
     private Proprietario proprietario;
 
     public abstract double calcularAluguel();
