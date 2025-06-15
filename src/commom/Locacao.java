@@ -19,6 +19,12 @@ public class Locacao {
     private Corretor corretor;
     private Imovel imovel;
 
+    public Locacao(Imovel imovel, Corretor corretor, Locatario locatario) {
+        this.imovel = imovel;
+        this.corretor = corretor;
+        this.locatario = locatario;
+    }
+
     public void enviarCobranca() {
         System.out.printf("E-mail: %s%n", locatario.getEmail());
         System.out.printf("O valor referente ao seu aluguel neste mês foi de R$ %f%n.", imovel.calcularAluguel());

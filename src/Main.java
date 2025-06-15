@@ -1,9 +1,7 @@
 import commom.Locacao;
 import imovel.Casa;
-import imovel.Imovel;
 import pessoa.Corretor;
 import pessoa.Locatario;
-import pessoa.Pessoa;
 import pessoa.Proprietario;
 
 public class Main {
@@ -13,13 +11,10 @@ public class Main {
         final Locatario locatario = new Locatario("nome_do_locatario");
         final Proprietario proprietario = new Proprietario("nome_do_proprietario");
         final Casa imovel = new Casa(proprietario, 1200.0);
-
-        Locacao locacao = new Locacao();
-        locacao.setCorretor(corretor);
-        locacao.setLocatario(locatario);
-        locacao.setImovel(imovel);
+        final Locacao locacao = new Locacao(imovel, corretor, locatario);
 
         locacao.pagarProprietario();
+        corretor.sacarComissoes(500);
 
         System.out.println("Hello, World!");
     }
